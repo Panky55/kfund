@@ -1,9 +1,7 @@
 language: objective-c
 xcode_project: kfd.xcodeproj # path to your xcodeproj folder
 xcode_scheme: kfd
-xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
 osx_image: xcode14.2
-xcode_sdk: iphonesimulator
 script:
 - set -o pipefail
 - xcodebuild -project kfd.xcodeproj -scheme kfd -destination platform\=iOS\ Simulator,OS\=10.1,name\=iPad\ Pro\ \(9.7-inch\) build | xcpretty
