@@ -4,4 +4,4 @@ xcode_scheme: kfd
 xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
 script:
 - set -o pipefail
-- xcodebuild -project kfd.xcodeproj -scheme kfund -destination platform\=iOS\ Simulator,OS\=10.1,name\=iPad\ Pro\ \(9.7-inch\) build | xcpretty
+- xcodebuild -project kfd.xcodeproj -scheme kfd -destination platform\=iOS\ Simulator,OS\=10.1,name\=iPad\ Pro\ \(9.7-inch\) build | xcpretty
